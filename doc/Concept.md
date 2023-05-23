@@ -90,3 +90,25 @@ Considerations:
 - Explore community resources and examples due to slightly limited documentation.
 
 In conclusion, k3d emerges as the recommended tool for AsciiArtify's PoC, as it offers a good balance between simplicity and flexibility. However, it's crucial to consider the specific requirements, constraints, and preferences of the project before finalizing the choice. The AsciiArtify team should evaluate the features, advantages, and disadvantages discussed in this document, conduct hands-on testing, and make an informed decision based on their unique needs.
+
+
+## Conclusions
+
+Based on the comparative analysis and the hands-on experience with each tool, the following conclusions and recommendations can be made for the PoC of the AsciiArtify startup:
+
+| Tool     | Advantages                                              | Disadvantages                                               |
+|----------|---------------------------------------------------------|-------------------------------------------------------------|
+| Minikube | - Easy to set up and use                                 | - Limited scalability for large deployments                 |
+|          | - Good documentation                                    | - Requires resources on the local machine                   |
+|          | - Cross-platform support                                | - May not fully replicate production environments           |
+| kind     | - Lightweight and efficient                             | - Limited management and monitoring features               |
+|          | - Ability to mount local directories                    | - Less suited for complex multi-node deployments           |
+|          | - Docker compatibility                                  | - Less documentation compared to Minikube                  |
+| k3d      | - Quick setup                                           | - Steeper learning curve                                    |
+|          | - Integration with Rancher                              | - Requires additional setup steps                           |
+|          | - Multi-node cluster support                            | - May introduce complexity for simple deployments          |
+|          | - Good scalability                                      |                                                             |
+
+### Recommendation
+
+Based on the evaluation, **Minikube** is recommended for the PoC of AsciiArtify. It provides a user-friendly experience, comprehensive documentation, and cross-platform support, making it suitable for local development and testing. While it has some scalability limitations, it offers an excellent starting point for the startup's needs. As the project progresses and scalability becomes a priority, alternative solutions can be considered.
